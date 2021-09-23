@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Mohamed Aziz Ben Nessir Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -11,6 +11,22 @@
 
 
 <body>
+    <script>
+        (function () {
+          function resize() {
+            var body = document.getElementsByTagName('body')[0];
+            var html = document.getElementsByTagName('html')[0];
+            var width = html.clientWidth;
+            var height =  html.clientHeight;
+            var max = width > height ? width : height;
+            var min = width > height ? height : width;
+            body.style.width = max + "px";
+            body.style.height = min + "px";
+          }
+          resize();
+          window.addEventListener("resize", resize)
+        })();
+      </script>
     <div class="card" >
         <div class="flex-container">
             <div class="card_img">
@@ -30,12 +46,13 @@
 
         <div class="info">
             <h1 class="name">Mohamed Aziz Ben Nessir</h1>
-                <p class="txt">Hello there ! my name is Moahmed Aziz a tunisian Developer. I'm currently a 3rd year computer science and networks engineering student in HICS (isi ariana) in tunisia but I am also aiming to become self taught data scientist and therefore aiming to land a DataScience internship for my PFE this year (2022) here are my qualifications : </p>
-                    <a href="./sample.pdf" class="button">Resume</a>
+                <p class="txt" >Hello there ! my name is Moahmed Aziz a tunisian Developer. I'm currently a 3rd year computer science and networks engineering student in HICS ( isi ariana ) in tunisia but I am also aiming to become self taught data scientist and therefore aiming to land a DataScience internship for my PFE this year (2022) here are my qualifications : </p>
+                    <a href="#" class="button">Resume</a>
                     <a href="https://github.com/Mohamed-Aziz-Ben-Nessir/DataSciencePortfolio" class="button">DataScience portfolio</a>
-                    <a href="https://github.com/Mohamed-Aziz-Ben-Nessir/WebDevelopmentPortfolio" class="button">WebDev portfolio</a>
+                    <a href="#" class="button">WebDev portfolio</a>
         </div>
     </div>
+
 </body>
 
 </html>
