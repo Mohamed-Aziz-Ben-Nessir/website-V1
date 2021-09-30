@@ -177,10 +177,49 @@ a{
 }
 @media screen and (max-width: 868px) {
     .card{
-        max-width:100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 2rem;
+        min-width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        overflow: hidden;
         box-sizing:border-box;
-    
+
     }
+
+    .card_img{
+        max-width: 100%;
+        min-width: 100%;
+        margin-top: 100px;
+        transform: translate(0,-8rem);
+    }
+    .connect h2{
+        font-size: 17px; 
+        margin-top: -8rem;
+        padding-bottom: 0.5rem ; 
+    }*
+    .fa-facebook-f{
+        font-size:25px ;
+    }
+    
+    .fa-linkedin-in{
+        font-size:25px ;
+    }
+    
+    .fa-github{
+        font-size:25px ;
+    }
+    
+    .name{
+        font-size: 18px;
+    }
+    .txt{
+        margin-bottom: 2rem;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    
 }
 @media screen and (max-width : 768px) {
     .card{
@@ -194,16 +233,11 @@ a{
         box-sizing:border-box;
 
     }
-    .flex-container {
-        min-width: 100%;
-        max-width: 100%;
-    }
+ 
     .card_img{
         margin-top: 100px;
         max-width: 100%;
         min-width: 100%;
-        width: 200px;
-        height: 300px;
         transform: translate(0,-8rem);
     }
     .connect h2{
